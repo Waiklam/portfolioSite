@@ -85,7 +85,6 @@ header {
     position: inherit;
     height: 13rem;
     width: 100%;
-    top: -7rem;
     overflow: hidden;
     z-index: 10;
     transition: top 1s ease-in;
@@ -250,6 +249,7 @@ main p {
 
 #main-arrow-down {
     position: inherit;
+    top: 25px;
 }
 
 .arrow-box {
