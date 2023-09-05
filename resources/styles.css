@@ -276,5 +276,7 @@ main p {
     top: 10rem;
 }
 
-
+.contactname {
+    font-size: 12vh;
+}
 
