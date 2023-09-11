@@ -6,6 +6,18 @@ var navArrowBox = document.getElementById('nav-arrow-box');
 var arrowBox = document.getElementsByClassName('arrow-box');
 var arrow = document.getElementsByClassName('arrow');
 
+
+function navTransition() {
+    if (navWrap.style.top === '-7rem') {
+        navWrap.style.top = '.5rem';
+        navArrowDown.style.transform = 'rotate(-180deg)';
+    } else {
+        navWrap.style.top = '.5rem';
+        navArrowDown.style.transform = 'rotate(0deg)';
+        navWrap.style.top = '-7rem';
+    }
+}
+
 function buttonChange() {
     var aboutText = document.getElementsByClassName('about-text');
     var about = document.getElementById('about');
@@ -67,16 +79,6 @@ function buttonChange() {
     }
 }
 
-function navTransition() {
-    if (navWrap.style.top === '-7rem') {
-        navWrap.style.top = '0rem';
-        navArrowDown.style.transform = 'rotate(-180deg)';
-    } else {
-        navWrap.style.top = '0rem';
-        navArrowDown.style.transform = 'rotate(0deg)';
-        navWrap.style.top = '-7rem';
-    }
-}
 
 //function arrowMouseOver {
     
@@ -86,9 +88,10 @@ function navTransition() {
 
 //}
 
-
-aboutButton.onclick = buttonChange;
 navArrowBox.onclick = navTransition;
+aboutButton.onclick = buttonChange;
+
+
 //arrowBox.forEach(element => {
     //element.onmouseover = arrowMouseOver;
     //element.onmouseout = arrowMouseOut;

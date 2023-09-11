@@ -293,7 +293,6 @@ main p {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    color: #232323;
 }
 
 @keyframes gradient {
@@ -314,64 +313,21 @@ main p {
     animation: gradient 15s ease infinite;
 }
 
-.contact-me {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #contact-box {
-    position: relative;
-    height: 30rem;
-    width: 50rem;
+    position: absolute;
+    height: 40vh;
+    width: 70vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
     border: solid 2px white;
-    background-color: rgba( 255, 255, 255, 0.5);   
+    background-color: rgba( 255, 255, 255, 0.5);
 }
 
-.contact-header {
-    font-size: 4rem;
-    font-weight: bold;
-    font-style: italic;
-    padding: 30px;
+#contact-box h1 {
+    position: inherit;
+    font-size: 3em;
+    top: 10%;
 }
-
-.contact-inner {
-    display: flex;
-    height: 300px;
-    padding: 5%;
-}
-
-.contact-left {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 18px;
-}
-
-.icon-panel {
-    padding: 5%;   
-}
-
-.contact-right {
-    width: 50%;
-}
-
-.contact-icon {
-    width: 20%;
-    height: auto;
-    padding: 5% 0;
-    margin: 0px 5%;
-}
-
-
 
 *,
 *::before,
@@ -468,8 +424,6 @@ main p {
 
 #calc-main .arrow {
     margin-top: 15px;
-    border: solid rgb(32, 32, 32);
-    border-width: 0 3px 3px 0;
 }
 
 #calc-main li a {
@@ -485,12 +439,22 @@ main p {
     align-items: center;
     column-gap: 20px;
     overflow-x: scroll;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
+    width: 300px;
+    border: 5px solid red;
+    float: left;
 }
 
 .gallery-item {
     scroll-snap-align: center;
     min-width: 75%;
+    width:1000px;
+    float:left;
+    font-size:15px;
+    font-family:arial;
+    padding:10px;
+    cursor: pointer;
 }
 
 .gallery-image {
