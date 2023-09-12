@@ -338,39 +338,115 @@ main p {
     font-size: 4rem;
     font-weight: bold;
     font-style: italic;
-    padding: 30px;
+    padding-top: 5%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    height: 80%;
 }
 
 .contact-inner {
     display: flex;
-    height: 300px;
-    padding: 5%;
+    height: 100%;
+    padding: 5% 2.5%;
+    justify-content: space-around;
 }
 
 .contact-left {
     width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 0 5%;
+    line-height: 1.25;
+    border-top: 1px solid red;
+    background-color: rgba(0, 0, 0, 0.096);
 }
 
 .icon-panel {
-    padding: 5%;   
-}
-
-.contact-right {
-    width: 50%;
+    padding: 0% 5%;   
 }
 
 .contact-icon {
     width: 20%;
     height: auto;
-    padding: 5% 0;
     margin: 0px 5%;
 }
 
+.contact-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 0 5%;
+    line-height: 1.25;
+    border-left:  1px solid red;
+    border-bottom: 1px solid red;
+    background-color: rgba(255, 255, 255, 0.096);
+}
+
+.contact-right-header {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-row {
+    display: flex;
+    margin-bottom: 2.5%;
+}
+
+.half {
+    width: 50%;
+    padding: 0 2.5%;
+}
+
+.full {
+    width: 100%;
+    padding: 0 2.5%;
+}
+
+#contact-submit {
+    border: none;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    margin-top: 5%;
+}
+
+.contact-form input {
+    height: 36px;
+    width: 100%;
+    background: rgba( 255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.5);
+    outline: none;
+}
+
+.message-row {
+    width: 100%;
+}
 
 
 *,
